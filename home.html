@@ -37,27 +37,26 @@
 
         <main> 
             <aside> 
-                <nav>
-                    <div class="menu">  
-                        <ul>
-                            <li><a class="menu-item selected-item" data-content="your-orders">Your Orders</a></li>
-                            <li><a class="menu-item" data-content="reward-status">Reward Status</a></li>
-                            <li><a class="menu-item" data-content="account-settings">Account Settings</a></li>
-                            <li><a class="menu-item" data-content="payment-method">Payment Methods</a></li>
-                            <li><a class="menu-item" data-content="sign-out">Sign Out</a></li>
-                        </ul>
-                    </div>    
+                <nav class="menu">
+                    <ul>
+                        <li><a class="menu-item selected-item" data-content="your-orders">Your Orders</a></li>
+                        <li><a class="menu-item" data-content="reward-status">Reward Status</a></li>
+                        <li><a class="menu-item" data-content="account-settings">Account Settings</a></li>
+                        <li><a class="menu-item" data-content="payment-method">Payment Methods</a></li>
+                        <li><a class="menu-item" data-content="sign-out">Sign Out</a></li>
+                    </ul>    
                 </nav>
             </aside>
 
             <section>
-                <div class="content your-orders">
-                    <div>
+                <div id="yourOrders" class="content your-orders">
+                    <div class="main-title">
                         <div class="logo-container">
                             <div class="vip-logo"></div>
                         </div>    
                         <h1>Your Orders</h1>
                     </div>
+
                     <div class="container">
                         <div class="product-image">
                             <div class="main-product"></div>
@@ -79,7 +78,7 @@
                                 </div>
                             </div>
 
-                            <div class="order-details-modify">
+                            <div class="order-details-2">
                                 <div id="orderDetailsBtn"><a>Order Details</a></div>
                                 <div>
                                     <a>Cancel</a>
@@ -108,22 +107,23 @@
                 </div> 
 
                 <div class="content reward-status hidden">
-                    <div>
+                    <div class="main-title">
                         <div class="logo-container">
-                            <div class="gold-logo hidden reward-status"></div>    
+                            <div class="gold-logo"></div>    
                         </div>   
                         <h1>Reward Status</h1> 
                     </div>
                     
                     <div class="container">
                         <div class="container-item-wrapper">Activity</div>
+                        
                         <div class="container-item-wrapper">
                             <div>
                                 <div>VIP</div>
                                 <div>Current Stauts</div>
                             </div>    
                             <div class="current-status">
-                                <div>%678.42</div>
+                                <div>$678.42</div>
                                 <div>Lifetime Spend</div>
                             </div>    
                             <div class="current-status">
@@ -138,7 +138,7 @@
                                 <div>Next Tier</div>
                             </div>    
                             <div class="next-status">
-                                <div>%321.42</div>
+                                <div>$321.42</div>
                                 <div>To Gold Status</div>
                             </div>    
                             <div class="next-status">
@@ -163,9 +163,9 @@
                 </div>            
 
                 <div class="content account-settings hidden">
-                    <div>
+                    <div class="main-title">
                         <div class="logo-container">
-                            <div class="elite-logo hidden account-settings"></div>
+                            <div class="elite-logo"></div>
                         </div>
                         <h1>Account Settings</h1>
                     </div>
@@ -180,12 +180,12 @@
                                 </div>
 
                                 <div>
-                                    <input  required type="number" id="yourNumber" name="yourNumber" placeholder="1 31413413414">
+                                    <input required type="number" id="yourNumber" name="yourNumber" placeholder="1 31413413414">
                                     <input required type="password" id="yourPassword" name="yourPassword" placeholder="*************">
                                 </div>
 
                                 <div class="save-changes">
-                                    <button type="submit">Save Chages</button>
+                                    <button type="submit">Save Changes</button>
                                 </div>
                             </form>
                         </div>
@@ -214,9 +214,9 @@
                 </div>    
 
                 <div class="content payment-method hidden">
-                    <div>
+                    <div class="main-title">
                         <div class="logo-container">
-                            <div class="member-logo hidden payment-method"></div>
+                            <div class="member-logo"></div>
                         </div>    
                         <h1>Payment Methods</h1>
                     </div>
@@ -237,11 +237,18 @@
                 </div>
     
                 <div id="orderDetails" class="content order-detail hidden">
-                    <div class="order-details-title">
-                        <div class="order-details-top">Your Orders/Order #30002</div>
+                    <div class="main-title">
+                        <div class="logo-container">
+                            <div class="vip-logo"></div>
+                        </div>
                         <h1>Order Details</h1>
-                        <div class="order-cancelled">Order Cancelled</div>
+
+                        <div class="order-details-title">
+                            <div class="order-details-top">Your Orders/Order #30002</div>
+                            <div class="order-cancelled">Order Cancelled</div>
+                        </div>
                     </div>
+
                     <div class="container">
                         <div class="billing-wrapper">
                             <div>Billing</div>

@@ -29,11 +29,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
         });
     } 
     
+    const orderDetails = document.getElementById('orderDetails');
+    const orderDetailsBtn = document.getElementById('orderDetailsBtn');
+    const yourOrders = document.getElementById('yourOrders');
 
-    //const orderDetails = document.getElementById('orderDetails');
-    //const orderDetailsBtn = document.getElementById('orderDetailsBtn');
-
-    //orderDetailsBtn.addEventListener ('click', function() {
-    //    orderDetails.classList.remove('hidden');
-    //});
+    orderDetailsBtn.addEventListener('click', function() {
+        orderDetails.classList.remove('hidden');
+        yourOrders.classList.add('hidden');
+    });
 });
