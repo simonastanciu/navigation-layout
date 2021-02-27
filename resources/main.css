@@ -160,6 +160,7 @@ li {
     position: relative;
 }
 
+/* o sugestie aici: mult mai ok structural, sa fi avut logo-ul ca parte din aside, evitai pozitionarea si era si mai corect considerand logica structurala */
 .logo-container {
     width: 150px;
     height: 150px;
@@ -167,6 +168,7 @@ li {
     left: -18%;
 }
 
+/* putea fi folosita o clasa comuna aici si o clasa specifica doar pentru background-image */
 .vip-logo,
 .elite-logo,
 .member-logo,
@@ -453,6 +455,7 @@ button {
 
 .card-item {
     margin: 10px 0 30px 80px;
+    /* cred ca puteai sa dai dimensiuni mai mici aici, desi au ajutat sa scoata in evidenta o problema, ti-am atasat un screenshot. */
     width: 480px;
     height: 320px;
     background-image: url(../assets/card-1.png);
