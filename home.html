@@ -14,35 +14,44 @@
     <body>
         <header>
             <div class="top-header">Free shipping on orders over 250$</div>
-            <div class="header-wrapper">
-                <div class="logo-wrapper">
-                    <div class="logo"> 
-                        <img src="assets/logo-boundary.png">
+            <div class="show-header">   
+                <div class="header-wrapper">
+                    <div class="logo-wrapper">
+                        <div class="logo"> 
+                            <img src="assets/logo-boundary.png">
+                        </div>
                     </div>
-                </div>
 
-                <div class="shopping-menu">
-                    <div>SHOP</div>
-                    <div class="icon-size">
-                        <img src="assets/icon-find.png">
+                    <div class="shopping-menu">
+                        <div>SHOP</div>
+                        <div class="icon-size">
+                            <img src="assets/icon-find.png">
+                        </div>
+                        <div class="icon-size">
+                            <img src="assets/icon-cart-2.png">
+                        </div>
+                        <div class="icon-size">
+                            <img src="assets/icon-exit-3.png">
+                        </div>
                     </div>
-                    <div class="icon-size">
-                        <img src="assets/icon-cart-2.png">
-                    </div>
-                    <div class="icon-size">
-                        <img src="assets/icon-exit-3.png">
-                    </div>
-                </div>
-            </div>    
+                </div> 
+            </div>   
         </header>
 
         <main> 
             <aside> 
+                <div class="logo-container">
+                    <div class="menu-item-logo"></div>
+                    <div class="menu-item-logo hidden"></div>  
+                    <div class="menu-item-logo hidden"></div>
+                    <div class="menu-item-logo hidden"></div>
+                    <div class="menu-item-logo hidden"></div>
+                </div>
                 <nav class="menu">
                     <ul>
                         <li><a class="menu-item selected-item" data-content="your-orders">Your Orders</a></li>
                         <li><a class="menu-item" data-content="reward-status">Reward Status</a></li>
-                        <li><a class="menu-item" dasta-content="account-settings">Account Settings</a></li>
+                        <li><a class="menu-item" data-content="account-settings">Account Settings</a></li>
                         <li><a class="menu-item" data-content="payment-method">Payment Methods</a></li>
                         <li><a class="menu-item" data-content="sign-out">Sign Out</a></li>
                     </ul>    
@@ -52,9 +61,6 @@
             <section>
                 <div id="yourOrders" class="content your-orders">
                     <div class="main-title">
-                        <div class="logo-container">
-                            <div class="menu-item-logo"></div>
-                        </div>    
                         <h1>Your Orders</h1>
                     </div>
 
@@ -109,9 +115,6 @@
 
                 <div class="content reward-status hidden">
                     <div class="main-title">
-                        <div class="logo-container">
-                            <div class="menu-item-logo gold-logo"></div>    
-                        </div>   
                         <h1>Reward Status</h1> 
                     </div>
                     
@@ -165,9 +168,6 @@
 
                 <div class="content account-settings hidden">
                     <div class="main-title">
-                        <div class="logo-container">
-                            <div class="menu-item-logo elite-logo"></div>
-                        </div>
                         <h1>Account Settings</h1>
                     </div>
                     
@@ -186,7 +186,7 @@
                                 </div>
 
                                 <div class="save-changes">
-                                    <button type="submit">Save Changes</button>
+                                    <button id="saveButton" type="submit">Save Changes</button>
                                 </div>
                             </form>
                         </div>
@@ -216,9 +216,6 @@
 
                 <div class="content payment-method hidden">
                     <div class="main-title">
-                        <div class="logo-container">
-                            <div class="menu-item-logo member-logo"></div>
-                        </div>    
                         <h1>Payment Methods</h1>
                     </div>
                     
@@ -239,9 +236,6 @@
     
                 <div id="orderDetails" class="content order-detail hidden">
                     <div class="main-title">
-                        <div class="logo-container">
-                            <div class="menu-item-logo vip-logo"></div>
-                        </div>
                         <h1>Order Details</h1>
 
                         <div class="order-details-title">
