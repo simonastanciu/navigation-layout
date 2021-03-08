@@ -25,6 +25,10 @@ main {
     padding: 15px 0;
 }
 
+.show-header {
+    display: none;
+}
+
 .header-wrapper {
     width: 100%;
     display: flex;
@@ -34,6 +38,7 @@ main {
 
 .logo-wrapper {
     width: 20%;
+    height: 55px;
     background-color: #f2ede8;
 }
 
@@ -42,7 +47,7 @@ main {
     height: 100px;
     position: absolute;
     left: 50px;
-    top: 70px;
+    top: 65px;
 }
 
 .logo img {
@@ -83,6 +88,7 @@ aside {
     width: 20%;
     height: 100%;
     background-color: #f2ede8 ;
+    position: relative;
 }
 
 section {
@@ -126,8 +132,7 @@ section {
 /*MENU*/
 .menu {
     position: relative;
-    margin: 120px 0;
-    top: 170px;
+    top: 20px;
     left: 20px;
 }
 
@@ -141,6 +146,7 @@ ul {
 li {
     padding: 10px 0;
     font-weight: 600;
+    cursor: pointer;
 }
 
 li a {
@@ -169,8 +175,7 @@ li a {
 .logo-container {
     width: 150px;
     height: 150px;
-    position: absolute;
-    left: -18%;
+    margin: 80px auto;
 }
 
 .menu-item-logo {
@@ -182,17 +187,18 @@ li a {
     background-position: center;
 }
 
-.elite-logo {
+.logo-container div:nth-of-type(3) {
     background-image: url(../assets/logo-elite.png);
 }
 
-.member-logo {
+.logo-container div:nth-of-type(4) {
     background-image: url(../assets/logo-member.png);
 }
 
-.gold-logo {
+.logo-container div:nth-of-type(5) {
     background-image: url(../assets/logo-gold.png);
 }
+
 
 /*YOUR ORDERS*/
 h1 {
