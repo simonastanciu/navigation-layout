@@ -32,15 +32,18 @@
 
 $(function () {
     const menuItem = $('.menu-item');
+    // la ce facem aici console.log? la text? intre ghilimele ai sa vezi exact textul, daca vrei sa iti verifici selectia, folosesti numele constantei
     console.log('menu-item');
     const pageContent = $('.content');
     console.log('page-content');
 
     menuItem.click(function(e) {
+        // ce verificam aici? nu imi e clar
         if(!$(this).data('content')) {
             pageContent.addClass('hidden');               
         } 
 
+        // esti pe menuItem, aici nu vrei sa ascunzi menuItem, corect?
         $(this).removeClass('hidden');
         menuItem.removeClass('selected-item');
         $(this).addClass('selected-item');
@@ -49,6 +52,13 @@ $(function () {
     });
     console.log($('.menu-item').data('content'));
 
+
+    //////////////////////////////////
+    menuItem.click(function() {
+        $('.content').addClass('hidden');
+        $(`.${$(this).data('content')}`).removeClass('hidden');
+    });
+    ////////////////////////////////////
 
     $('#orderDetailsBtn').click(function () {
         $('#orderDetails').removeClass('hidden');
