@@ -21,6 +21,7 @@ $(function () {
     $('#orderDetailsBtn').click(function () {
         $('#orderDetails').removeClass('hidden');
         $('#yourOrders').addClass('hidden');
+        $('.show-header').show();
     });
     console.log ('order-link', $('#orderDetailsBtn'));
 
