@@ -14,5 +14,5 @@ $(function () {
 
     galleryOverlay.click(function(){
         $(this).fadeOut('slow');
-    })
+    });
 })
