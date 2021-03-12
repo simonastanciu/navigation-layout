@@ -9,6 +9,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="resources/main.css">
+        <link rel="stylesheet" href="bundles/font-awesome/css/all.css">
         <script src="bundles/jquery/jquery-3.5.1.min.js"></script>
     </head>
     <body>
@@ -66,7 +67,7 @@
 
                     <div class="container">
                         <div class="product-image">
-                            <div class="main-product"></div>
+                            <div data-image="product.png" class="product-img main-product"></div>
                         </div>
 
                         <div class="order-details-wrapper"> 
@@ -98,17 +99,25 @@
                                 <div>Also in this order</div>
                                 <div class="other-products">
                                     <div>
-                                        <div class="product-1"></div>
+                                        <div data-image="addition-1.png" class="product-img product-1"></div>
                                     </div>
                                     <div>
-                                        <div class="product-3"></div>
+                                        <div data-image="addition-3.png" class="product-img product-3"></div>
                                     </div>
                                     <div>
-                                        <div class="product-4"></div>
+                                        <div data-image="addition-4.png" class="product-img product-4"></div>
                                     </div>
                                     <div><a>+ 3 MORE</a></div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="gallery-overlay">
+                        <div class="overlay-container">
+                            <i class="fas fa-arrow-left"></i>
+                            <i class="fas fa-arrow-right"></i>
+                            <div class="full-image-wrapper"></div>
                         </div>
                     </div>
                 </div> 
@@ -280,6 +289,7 @@
         </main>
 
         <script src="resources/main.js"></script>
+        <script src="resources/photo.js"></script>
         <noscript>
             NO JS.
         </noscript>   

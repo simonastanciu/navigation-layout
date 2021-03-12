@@ -221,7 +221,7 @@ h1 {
     background-color: #f2ede8;
 }
 
-.main-product {
+.product-img.main-product {
     width: 100%;
     height: 100%;
     background-image: url(../assets/product-1/product.png);
@@ -284,20 +284,18 @@ h1 {
     background-color: #f2ede8;
 }
 
-.product-1, 
-.product-3, 
-.product-4 {
+.product-img {
     background-image: url(../assets/product-1/addition-1.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.product-3 {
+.product-img.product-3 {
     background-image: url(../assets/product-1/addition-3.png);
 }
 
-.product-4 {
+.product-img.product-4 {
     background-image: url(../assets/product-1/addition-4.png);
 }
 
@@ -545,4 +543,48 @@ button {
     width: 400px;
     font-size: 20px;
     font-weight: 800;
+}
+
+/*Gallery*/
+.gallery-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(211, 211, 211, .8);
+    display: none;
+}
+
+.overlay-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.full-image-wrapper {
+    width: 800px;
+    height: 600px;
+    background-color: #f2ede8;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.overlay-container i {
+    font-size: 50px;
+    color: black;
+    position: absolute;
+}
+
+.overlay-container i:nth-child(1) {
+    left: 25%;
+}
+
+.overlay-container i:nth-child(2) {
+    right: 25%;
 }
