@@ -7,7 +7,7 @@ $(function () {
     menuItem.click(function() {
         pageContent.addClass('hidden');
         $("." + $(this).data('content')).removeClass('hidden');
-        // $(`.${$(this).data('content')}`).removeClass('hidden');
+        //alternativa $(`.${$(this).data('content')}`).removeClass('hidden');
         menuItem.removeClass('selected-item');
         $(this).addClass('selected-item');
         $('.show-header').show();
