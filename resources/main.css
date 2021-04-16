@@ -171,7 +171,6 @@ li a {
     position: relative;
 }
 
-/* o sugestie aici: mult mai ok structural, sa fi avut logo-ul ca parte din aside, evitai pozitionarea si era si mai corect considerand logica structurala */
 .logo-container {
     width: 150px;
     height: 150px;
